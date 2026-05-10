@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-gold: #D4AF37;
+  --color-gold-dark: #b8972e;
+  --color-gold-light: #F4D06F;
+  
+  --color-navy-900: var(--bg-900);
+  --color-navy-800: var(--bg-800);
+  --color-navy-700: var(--bg-700);
+  
+  --color-text-primary: var(--tx-primary);
+  --color-text-secondary: var(--tx-secondary);
+  --color-white: var(--tx-white);
+}
+
+@layer base {
+  :root {
+    --bg-900: #F8FAFC;
+    --bg-800: #FFFFFF;
+    --bg-700: #F1F5F9;
+    --tx-primary: #0F172A;
+    --tx-secondary: #475569;
+    --tx-white: #0F172A;
+  }
+  
+  .dark {
+    --bg-900: #183D3D;
+    --bg-800: #1C4545;
+    --bg-700: #225454;
+    --tx-primary: #F5F5F5;
+    --tx-secondary: #C3D0D0;
+    --tx-white: #FFFFFF;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-900);
+    color: var(--tx-primary);
+  }
+  
+  body {
+    @apply font-sans bg-navy-900 text-text-primary transition-colors duration-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-white transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-br from-gold to-gold-dark hover:from-gold-dark hover:to-gold shadow-[0_0_15px_rgba(212,175,55,0.15)] hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] px-6 py-3 rounded font-medium transition-all duration-300 inline-block text-center;
+    color: #183D3D !important;
+  }
+  
+  .btn-outline {
+    @apply border border-gold/40 text-gold hover:bg-gold/10 px-6 py-3 rounded font-medium transition-all duration-300 inline-block text-center backdrop-blur-sm shadow-[0_0_15px_rgba(212,175,55,0.05)];
+  }
+}
+
