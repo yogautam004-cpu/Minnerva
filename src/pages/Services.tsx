@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Gavel, FileText, Heart, Users, Building2 } from 'lucide-react';
+import { Shield, Gavel, FileText, Heart, Users, Building2, MessageCircle } from 'lucide-react';
 import PageTransition from '../components/PageTransition';
 
 const detailedServices = [
@@ -180,8 +180,8 @@ export default function Services() {
             <Link to="/contact" className="btn-primary">
               Book a Consultation
             </Link>
-            <a href="tel:9843756228" className="btn-outline !text-white !border-white/20 hover:!bg-white/10">
-              Call 9843756228
+            <a href="https://wa.me/9779843756228" target="_blank" rel="noopener noreferrer" className="btn-outline !text-white !border-white/20 hover:!bg-white/10 flex items-center justify-center gap-2">
+              <MessageCircle size={20} /> WhatsApp Us
             </a>
           </div>
         </div>

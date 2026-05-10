@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,6 +16,11 @@ export default function Footer() {
             <p className="text-text-secondary text-sm leading-relaxed max-w-xs">
               Strategic Legal Advocacy in Kathmandu. Dedicated to protecting your rights with wisdom and precision.
             </p>
+            <div className="flex gap-4 pt-2">
+              <a href="https://www.facebook.com/profile.php?id=100083395596348" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-gold transition-colors" aria-label="Facebook">
+                <Facebook size={20} />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Lock, Award, ClipboardCheck } from 'lucide-react';
+import { Lock, Award, ClipboardCheck, MessageCircle } from 'lucide-react';
 import PageTransition from '../components/PageTransition';
 import SectionHeading from '../components/SectionHeading';
 
@@ -221,8 +221,8 @@ export default function About() {
             <Link to="/contact" className="btn-primary">
               Book a Consultation
             </Link>
-            <a href="tel:9843756228" className="btn-outline">
-              Call 9843756228
+            <a href="https://wa.me/9779843756228" target="_blank" rel="noopener noreferrer" className="btn-outline flex items-center justify-center gap-2">
+              <MessageCircle size={20} /> WhatsApp Us
             </a>
           </div>
         </div>
