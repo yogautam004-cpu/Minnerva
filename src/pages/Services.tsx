@@ -122,7 +122,7 @@ export default function Services() {
           <section 
             key={service.id} 
             id={service.id} 
-            className={`py-24 ${index % 2 !== 0 ? 'bg-navy-800/60 border border-gold/10 shadow-lg' : ''}`}
+            className="py-24"
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex flex-col md:flex-row gap-12 items-start">
