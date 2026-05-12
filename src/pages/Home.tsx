@@ -184,7 +184,7 @@ export default function Home() {
                 Minerva Law Partners is Kathmandu's trusted legal firm for criminal defense, corporate compliance, and high-stakes litigation. Rooted in Baneshwor, we combine deep knowledge of Nepal's legal landscape with an uncompromising commitment to your outcome.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contact" className="btn-primary">
+                <Link to="/contact#contact-form" className="btn-primary">
                   Book a Free Consultation
                 </Link>
                 <a href="https://wa.me/9779843756228" target="_blank" rel="noopener noreferrer" className="btn-outline !text-white !border-white/20 hover:!bg-white/10 flex items-center justify-center gap-2">
@@ -288,7 +288,7 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Link to="/about" className="btn-outline">
+            <Link to="/about#partners" className="btn-outline">
               Read Full Profiles
             </Link>
           </div>
@@ -377,7 +377,7 @@ export default function Home() {
             Do not navigate Nepal's legal system alone. Minerva Law Partners is ready to fight for your rights, protect your business, and guide your family through every legal challenge.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/contact" className="btn-primary">
+            <Link to="/contact#contact-form" className="btn-primary">
               Book a Consultation
             </Link>
             <a href="https://wa.me/9779843756228" target="_blank" rel="noopener noreferrer" className="btn-outline !text-white !border-white/20 hover:!bg-white/10 flex items-center justify-center gap-2">

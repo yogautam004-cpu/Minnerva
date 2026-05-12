@@ -128,7 +128,7 @@ export default function About() {
       </section>
 
       {/* Partners */}
-      <section className="py-24 bg-navy-800 border-t border-gold/10">
+      <section id="partners" className="py-24 bg-navy-800 border-t border-gold/10 scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title="Our Partners" centered />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 max-w-6xl mx-auto">
@@ -218,7 +218,7 @@ export default function About() {
             Meet us and discuss your case today.
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/contact" className="btn-primary">
+            <Link to="/contact#contact-form" className="btn-primary">
               Book a Consultation
             </Link>
             <a href="https://wa.me/9779843756228" target="_blank" rel="noopener noreferrer" className="btn-outline flex items-center justify-center gap-2">

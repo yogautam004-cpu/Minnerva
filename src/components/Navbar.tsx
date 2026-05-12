@@ -58,7 +58,7 @@ export default function Navbar() {
 
 
             <Link
-              to="/contact"
+              to="/contact#contact-form"
               className="flex items-center gap-2 bg-gold hover:bg-gold-dark text-white px-4 py-2 rounded-md text-sm font-semibold transition-all"
             >
               <span>Book a Consultation</span>
@@ -105,7 +105,7 @@ export default function Navbar() {
               ))}
               <div className="pt-4 px-3">
                 <Link
-                  to="/contact"
+                  to="/contact#contact-form"
                   onClick={() => setIsOpen(false)}
                   className="flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-white px-4 py-3 rounded-md text-base font-semibold w-full transition-all"
                 >

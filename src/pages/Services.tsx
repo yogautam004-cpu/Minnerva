@@ -177,7 +177,7 @@ export default function Services() {
             Ready to discuss your legal matter?
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/contact" className="btn-primary">
+            <Link to="/contact#contact-form" className="btn-primary">
               Book a Consultation
             </Link>
             <a href="https://wa.me/9779843756228" target="_blank" rel="noopener noreferrer" className="btn-outline !text-white !border-white/20 hover:!bg-white/10 flex items-center justify-center gap-2">
